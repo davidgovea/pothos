@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "version": "2.7.26",
+  "name": "@pothos-examples/repro-double-interface-subgraph",
+  "main": "src/schema.ts",
+  "types": "src/schema.ts",
+  "scripts": {
+    "start": "node -r @swc-node/register src/schema.ts",
+    "type": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@pothos/core": "workspace:*",
+    "@pothos/plugin-relay": "workspace:*",
+    "@pothos/plugin-sub-graph": "workspace:*",
+    "graphql": "16.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
